@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', 'Courier New', monospace;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    border-radius: 50px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    overflow: hidden;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.header {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2em;
+    animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.content {
+    padding: 40px;
+}
+
+.lock-screen {
+    text-align: center;
+    padding: 40px;
+    background: #f0f0f0;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+}
+
+.lock-screen button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.hidden-message {
+    display: none;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.code-card {
+    background: #2d2d2d;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.code-card h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.code-console {
+    background: #1e1e1e;
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace;
+    overflow-x: auto;
+    margin: 10px 0;
+}
+
+.code-console pre {
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: #ff4757;
+}
+
+.riddle-box, .joke-card, .surprise-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.joke-card {
+    background: #ffeaa7;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    border-radius: 25px;
+    border: none;
+    width: 250px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.heart-animation {
+    font-size: 50px;
+    animation: heartbeat 1s infinite;
+    display: inline-block;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.final-message {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.simulation-output {
+    background: #000;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-family: monospace;
+    max-height: 200px;
+    overflow-y: auto;
+}

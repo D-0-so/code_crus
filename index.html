@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💖 Зүрхний Код | Чамд зориулав 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="mainContainer">
+        <div class="header">
+            <h1>💝 ЧАМД ЗОРИУЛСАН ОНЦГОЙ КОД 💝</h1>
+            <p>Нээхэд маш их хүчин чармайлт шаардана...</p>
+        </div>
+
+        <div class="content">
+            <!-- Түгжээтэй дэлгэц -->
+            <div class="lock-screen" id="lockScreen">
+                <div class="heart-animation">🔒❤️🔒</div>
+                <h3>Энд дараад код нээгээрэй...</h3>
+                <p>(Чиний төлөө маш их хөдөлмөрлөсөн)</p>
+                <button onclick="startUnlocking()">НЭЭХ 🔓</button>
+            </div>
+
+            <!-- Нууц мессеж (эхэндээ нуугдсан) -->
+            <div class="hidden-message" id="hiddenMessage">
+                <h2>✨ Бүх хэл дээрх хайрын кодууд ✨</h2>
+                
+                <!-- Кодын хэсгүүд -->
+                <div class="code-card">
+                    <h3>❤️ C++ - Хязгааргүй хайрын гогцоо</h3>
+                    <div class="code-console">
+                        <pre id="cppCode"></pre>
+                    </div>
+                    <button onclick="runCppSimulation()">▶️ C++ Кодыг Ажиллуулах (Симуляци)</button>
+                </div>
+
+                <div class="code-card">
+                    <h3>🐍 Python - Зүрхний функц</h3>
+                    <div class="code-console">
+                        <pre id="pythonCode"></pre>
+                    </div>
+                    <button onclick="runPythonSimulation()">▶️ Python Кодыг Ажиллуулах</button>
+                </div>
+
+                <div class="code-card">
+                    <h3>☕ Java - Зүрхний объект</h3>
+                    <div class="code-console">
+                        <pre id="javaCode"></pre>
+                    </div>
+                    <button onclick="runJavaSimulation()">▶️ Java Кодыг Ажиллуулах</button>
+                </div>
+
+                <div class="code-card">
+                    <h3>🗄️ SQL - Хайрын өгөгдлийн сан</h3>
+                    <div class="code-console">
+                        <pre id="sqlCode"></pre>
+                    </div>
+                    <button onclick="runSQLSimulation()">▶️ SQL Query Ажиллуулах</button>
+                </div>
+
+                <!-- Оньсого хэсэг (хөгжилтэй) -->
+                <div class="riddle-box">
+                    <h3>🎭 ХӨГЖИЛТЭЙ ОНЬСОГО 🎭</h3>
+                    <p>Кодыг бүрэн нээхийн тулд энэ оньсогыг бодоорой 😄</p>
+                    <p><strong>❓ "Би чамд хайртай" гэж хэлэхэд компьютер юу гэж хариулах вэ?</strong></p>
+                    <input type="text" id="riddleAnswer" placeholder="Хариултаа бичнэ үү...">
+                    <button onclick="checkRiddle()">Шалгах 🎉</button>
+                    <p id="riddleFeedback" style="margin-top:10px;"></p>
+                </div>
+
+                <!-- Хошин шог -->
+                <div class="joke-card">
+                    <h3>😂 ХӨГЖИЛТЭЙ ХЭСЭГ 😂</h3>
+                    <p id="jokeDisplay">👇 Шог үзэхийн тулд дар 👇</p>
+                    <button onclick="showRandomJoke()">Шинэ Шог 🎭</button>
+                </div>
+
+                <!-- Гэнэтийн бэлэг -->
+                <div class="surprise-box">
+                    <button onclick="showSurprise()">✨ ГЭНЭТИЙН БЭЛЭГ НЭЭХ ✨</button>
+                </div>
+
+                <!-- Эцсийн том мессеж -->
+                <div class="final-message" id="finalMessage">
+                    <div class="heart-animation">💖💖💖</div>
+                    <h2>ЧИ МИНИЙ АМЬДРАЛЫН ХАМГИЙН ГОЁ КОД 💘</h2>
+                    <p>Энэ бүх мөр, бүх өгүүлбэр, бүх сэтгэл... ЗӨВХӨН ЧАМД ЗОРИУЛАВ.</p>
+                    <p>Хэн ч үүнийг хийж чадахгүй, учир нь чи өвөрмөц, чи ганцхан. 🥰</p>
+                    <button onclick="shareOnGitHub()">📦 GitHub дээр оруулахад бэлэн</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
